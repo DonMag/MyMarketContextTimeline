@@ -7,7 +7,11 @@
 
 import UIKit
 
+// UIView with embedded UILabel
+// roughly equivalent to a cell
 class PaddedLabelView: UIView {
+	
+	// "padding" around the label
 	public var insets: UIEdgeInsets = .zero {
 		didSet {
 			edgeConstraints[0].constant = insets.top
@@ -16,17 +20,25 @@ class PaddedLabelView: UIView {
 			edgeConstraints[3].constant = -insets.bottom
 		}
 	}
-	public var font: UIFont = .systemFont(ofSize: 16.0) { didSet { theLabel.font = font } }
-	public var text: String = "" { didSet { theLabel.text = text } }
-	public var textColor: UIColor = .black { didSet { theLabel.textColor = textColor } }
-	public var multipleLines: Bool = true
-	public let theLabel = UILabel()
-	public var corner: CGFloat = 0.0 {
+
+	// for rounded corners
+	public var cornerRadius: CGFloat = 0.0 {
 		didSet {
-			layer.cornerRadius = corner
+			layer.cornerRadius = cornerRadius
 			layer.masksToBounds = true
 		}
 	}
+
+	// properties that we want to set so we can call (for example)
+	//		.font =
+	// instead of
+	//		.theLabel.font =
+	public var font: UIFont = .systemFont(ofSize: 16.0) { didSet { theLabel.font = font } }
+	public var text: String = "" { didSet { theLabel.text = text } }
+	public var textColor: UIColor = .black { didSet { theLabel.textColor = textColor } }
+
+	private let theLabel = UILabel()
+	
 	private var edgeConstraints: [NSLayoutConstraint] = []
 	override init(frame: CGRect) {
 		super.init(frame: frame)
@@ -47,6 +59,7 @@ class PaddedLabelView: UIView {
 			theLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -insets.right),
 			theLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -insets.bottom),
 		]
+		// this prevents auto-layout complaints
 		edgeConstraints[2].priority = .required - 1
 		edgeConstraints[3].priority = .required - 1
 		NSLayoutConstraint.activate(edgeConstraints)

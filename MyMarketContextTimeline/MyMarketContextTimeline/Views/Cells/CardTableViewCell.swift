@@ -161,7 +161,7 @@ extension CardTableViewCell {
             containerStackView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -8),
             containerStackView.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -8),
             
-            assetsCollectionView.heightAnchor.constraint(greaterThanOrEqualToConstant: 22),
+            assetsCollectionView.heightAnchor.constraint(greaterThanOrEqualToConstant: 220),
             benchmarksCollectionView.heightAnchor.constraint(greaterThanOrEqualToConstant: 22)
         ])
     }

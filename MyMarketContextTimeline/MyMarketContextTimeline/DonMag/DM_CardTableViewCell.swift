@@ -58,25 +58,25 @@ class DM_CardTableViewCell: UITableViewCell {
 		return label
 	}()
 	
-	let assetsTagsView: ArrangedLabelsView = {
-		let v = ArrangedLabelsView()
-		v.tagPadding = .init(width: 8.0, height: 2.0)
+	let assetsTagsView: ArrangedViewsView = {
+		let v = ArrangedViewsView()
+		v.labelPadding = .init(width: 8.0, height: 2.0)
 		v.edgePadding = .zero
-		v.tagCorner = 6.0
-		v.tagBkgColor = .systemBlue
+		v.labelViewCornerRadius = 6.0
+		v.bkgColor = .systemBlue
 		v.textColor = .white
-		v.font = .systemFont(ofSize: 12.0, weight: .bold)
+		v.font = .boldSystemFont(ofSize: 12.0)
 		return v
 	}()
 	
-	let benchmarksTagsView: ArrangedLabelsView = {
-		let v = ArrangedLabelsView()
-		v.tagPadding = .init(width: 8.0, height: 2.0)
+	let benchmarksTagsView: ArrangedViewsView = {
+		let v = ArrangedViewsView()
+		v.labelPadding = .init(width: 8.0, height: 2.0)
 		v.edgePadding = .zero
-		v.tagCorner = 6.0
-		v.tagBkgColor = .systemGreen
+		v.labelViewCornerRadius = 6.0
+		v.bkgColor = .systemGreen
 		v.textColor = .white
-		v.font = .systemFont(ofSize: 12.0, weight: .bold)
+		v.font = .boldSystemFont(ofSize: 12.0)
 		return v
 	}()
 	

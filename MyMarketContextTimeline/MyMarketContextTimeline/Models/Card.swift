@@ -8,7 +8,7 @@
 import Foundation
 
 struct Card {
-    let title: String?
+    var title: String?
     let subtitle: String?
     let sourceNew: String?
     let assets: [Asset]?
