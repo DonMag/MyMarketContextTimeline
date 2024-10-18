@@ -26,10 +26,10 @@
 		FC31934C2CBEF40F003BDC8E /* Asset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31933F2CBEF40F003BDC8E /* Asset.swift */; };
 		FC31934D2CBEF40F003BDC8E /* LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193412CBEF40F003BDC8E /* LeftAlignedCollectionViewFlowLayout.swift */; };
 		FC31934F2CBEF679003BDC8E /* PaddedLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC31934E2CBEF679003BDC8E /* PaddedLabelView.swift */; };
-		FC3193522CBF10F1003BDC8E /* ArrangedLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193512CBF10F1003BDC8E /* ArrangedLabelsView.swift */; };
 		FC3193542CBF111D003BDC8E /* DM_CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193532CBF111D003BDC8E /* DM_CardTableViewCell.swift */; };
 		FC3193562CBF1149003BDC8E /* DM_TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193552CBF1149003BDC8E /* DM_TimelineViewController.swift */; };
 		FC3193582CBF1174003BDC8E /* DM_TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193572CBF1174003BDC8E /* DM_TimelineView.swift */; };
+		FC31935A2CC27FD8003BDC8E /* ArrangedViewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3193592CC27FD8003BDC8E /* ArrangedViewsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,10 +54,10 @@
 		FC31933F2CBEF40F003BDC8E /* Asset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Asset.swift; sourceTree = "<group>"; };
 		FC3193412CBEF40F003BDC8E /* LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		FC31934E2CBEF679003BDC8E /* PaddedLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedLabelView.swift; sourceTree = "<group>"; };
-		FC3193512CBF10F1003BDC8E /* ArrangedLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrangedLabelsView.swift; sourceTree = "<group>"; };
 		FC3193532CBF111D003BDC8E /* DM_CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DM_CardTableViewCell.swift; sourceTree = "<group>"; };
 		FC3193552CBF1149003BDC8E /* DM_TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DM_TimelineViewController.swift; sourceTree = "<group>"; };
 		FC3193572CBF1174003BDC8E /* DM_TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DM_TimelineView.swift; sourceTree = "<group>"; };
+		FC3193592CC27FD8003BDC8E /* ArrangedViewsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrangedViewsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				FC31934E2CBEF679003BDC8E /* PaddedLabelView.swift */,
-				FC3193512CBF10F1003BDC8E /* ArrangedLabelsView.swift */,
+				FC3193592CC27FD8003BDC8E /* ArrangedViewsView.swift */,
 				FC3193532CBF111D003BDC8E /* DM_CardTableViewCell.swift */,
 				FC3193552CBF1149003BDC8E /* DM_TimelineViewController.swift */,
 				FC3193572CBF1174003BDC8E /* DM_TimelineView.swift */,
@@ -244,6 +244,7 @@
 				FC3193222CBEF347003BDC8E /* ViewController.swift in Sources */,
 				FC3193422CBEF40F003BDC8E /* TimelineViewModel.swift in Sources */,
 				FC31934B2CBEF40F003BDC8E /* Card.swift in Sources */,
+				FC31935A2CC27FD8003BDC8E /* ArrangedViewsView.swift in Sources */,
 				FC31931E2CBEF347003BDC8E /* AppDelegate.swift in Sources */,
 				FC3193452CBEF40F003BDC8E /* AssetCollectionViewCell.swift in Sources */,
 				FC3193492CBEF40F003BDC8E /* BenchmarksCollectionView.swift in Sources */,
@@ -251,7 +252,6 @@
 				FC31934C2CBEF40F003BDC8E /* Asset.swift in Sources */,
 				FC3193542CBF111D003BDC8E /* DM_CardTableViewCell.swift in Sources */,
 				FC3193482CBEF40F003BDC8E /* AssetsCollectionView.swift in Sources */,
-				FC3193522CBF10F1003BDC8E /* ArrangedLabelsView.swift in Sources */,
 				FC3193462CBEF40F003BDC8E /* TimelineViewController.swift in Sources */,
 				FC3193442CBEF40F003BDC8E /* BenchmarkCollectionViewCell.swift in Sources */,
 				FC31934F2CBEF679003BDC8E /* PaddedLabelView.swift in Sources */,
